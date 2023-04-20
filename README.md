@@ -1,6 +1,3 @@
-![Banner](https://user-images.githubusercontent.com/66101132/233464811-c055d55f-e77d-45af-bd0d-e942c2e831ca.jpg)
-
-
 # Identifying_Dementia_in_MRIs
 
 ## Business Understanding
