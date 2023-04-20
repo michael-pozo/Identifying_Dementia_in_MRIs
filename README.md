@@ -12,11 +12,11 @@ Two unique datasets were used in this project. The first included RAW (unprocess
 
 Below is the 128 slices progression of single RAW MRI scan:
 
-
+![RAW MRI Slices](https://user-images.githubusercontent.com/66101132/233239201-f1357a7a-38d0-4599-aa2b-8257a639b1d6.png)
 
 The images are in grayscale, rotated 90 degrees and show a sagittal view of the brain. In contrast the images below are the preprocessed images which have the brain extracted, main architecture segmented and show a dorsal view.
 
-
+![Preprocessed Images](https://user-images.githubusercontent.com/66101132/233239229-aacaa15f-fec4-4280-864b-7acea5fb7f96.png)
 
 My early hypothesis is that the preprocessed images will be much more successful due to a lot of the noise in the image being removed and edges being more detectable.
 
@@ -27,13 +27,15 @@ A baseline and several subsequent model iterations were run for each dataset. In
 
 RAW MRIs
 
+![RAW Model Accuracy Comparison](https://user-images.githubusercontent.com/66101132/233239252-975a4e69-253f-486d-a0a6-d1b2e18f6dd7.png)
 
-
+![RAW Model Loss Comparison(1)](https://user-images.githubusercontent.com/66101132/233239259-39e213f2-4898-477f-8e75-bb690257a919.png)
 
 Preprocessed MRIs
 
+![Preprocessed Model Accuracy Comparison](https://user-images.githubusercontent.com/66101132/233239275-87d86842-b981-4991-b4d6-5ed59c00d7e9.png)
 
-
+![Preprocessed Model Loss Comparison](https://user-images.githubusercontent.com/66101132/233239286-3b51bc97-db25-4f8f-9149-b9b1eba639e6.png)
 
 Model 2 from the preprocessed dataset was selected as the best model out of the all that were run. The model scored a test accuracy of 98.9% in identifying dementia in MRIs, including Very Mild and Mild cases. This is important because early detection of Alzheimer's Disease is crucial to slowing the progression of the disease and ensuring a higher quality of life for the patient.
 
