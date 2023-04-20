@@ -6,7 +6,7 @@ One in nine Americans age 65 and older will suffer from Alzheimer's Disease (AD)
 
 ## Data Understanding
 
-Two unique datasets were used in this project. The first included RAW (unprocessed) MRI images from patients enrolled in a dementia study provided by the Open Access Series of Imaging Studies (OASIS).The original study sample included multiple scans over time for 150 subjects: 72 cognitively normal subjects, 64 characterized as demented and 14 who began as cognitively normal and converted to demented over the course of the study. The converters were excluded from this project since the exact scan the conversion was observed could not be determined. In total, 1,234 scans were used across train, test and validation sets. Each scan came in the nifti file type which is a 3D image containing 128 slices of the brain. The single middle slice of the brain was extracted and saved as a PNG for use in modeling. The second dataset contains 6,500 images of preprocessed MRIs provided by the Alzheimer’s Disease Neuroimaging Initiative (ADNI). It contains labeled images of non-demented, very mildly demented, mildly demented and modererately demented brains. 
+Two unique datasets were used in this project. The first included RAW (unprocessed) MRI images from patients enrolled in a dementia study provided by the Open Access Series of Imaging Studies (OASIS)(data link: http://www.oasis-brains.org/) .The original study sample included multiple scans over time for 150 subjects: 72 cognitively normal subjects, 64 characterized as demented and 14 who began as cognitively normal and converted to demented over the course of the study. The converters were excluded from this project since the exact scan the conversion was observed could not be determined. In total, 1,234 scans were used across train, test and validation sets. Each scan came in the nifti file type which is a 3D image containing 128 slices of the brain. The single middle slice of the brain was extracted and saved as a PNG for use in modeling. The second dataset contains 6,500 images of preprocessed MRIs provided by the Alzheimer’s Disease Neuroimaging Initiative (ADNI)(data link: https://www.kaggle.com/datasets/sachinkumar413/alzheimer-mri-dataset). It contains labeled images of non-demented, very mildly demented, mildly demented and modererately demented brains. 
 
 ## Data Visualization
 
@@ -46,3 +46,22 @@ My recommendation for the University of Florida Health System is two-fold. First
 ## Next Steps
 
 One of the major constrainsts with this project was time and computational resources. My first approach to modeling the RAW images was to use the entire 3D image in the modeling process. Extracting the underlying data and passing it to the a model, however, took up more RAM than was available on my local device or in Google Colab Pro. With more time, I would look into building a custom version of keras ImageDataGenerator that could be used to load and feed the 3D arrays into a model in batchs to avoid overloading the memory. I believe this would be the best way to maximize the RAW image potential.
+
+
+## Repository Structure
+├── [.gitignore](https://github.com/michael-pozo/Identifying_Dementia_in_MRIs/blob/main/.gitignore)<br>
+├── [Identifying Dementia in MRIs.ipynb](https://github.com/michael-pozo/Identifying_Dementia_in_MRIs/blob/main/Identifying%20Dementia%20in%20MRIs.ipynb)<br>
+├── [Identifying Dementia in MRIs.pdf](https://github.com/michael-pozo/Identifying_Dementia_in_MRIs/blob/main/Identifying%20Dementia%20in%20MRIs.pdf)<br>
+└── [README.md](https://github.com/michael-pozo/Identifying_Dementia_in_MRIs/blob/main/README.md)<br>
+
+
+
+
+
+
+
+
+
+
+
+
